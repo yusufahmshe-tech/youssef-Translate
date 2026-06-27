@@ -1,3 +1,4 @@
+const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`;
 async function translateText() {
     const text = document.getElementById("inputText").value.trim();
     const lang = document.getElementById("lang").value;
